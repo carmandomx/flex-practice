@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+        .parent {
+            width: 250px;
+            height: 500px;
+            /* background-color: cyan; */
+            display: flex;
+            /* flex-direction: row;
+            flex-wrap: wrap-reverse; */
+
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+
+            align-items: flex-start;
+            align-content: center;
+        }
+        
+        .children {
+            
+            background-color: salmon;
+            text-align: center;
+            max-height: 50px;
+            /* flex: auto; */
+        }
+
+        .A {
+            flex-basis: 80px;
+            background-color: #FBF2CF;
+        }
+
+        .B {
+            flex-basis: 50px;
+            min-height: 100px;
+            background-color: #D61C4E;
+        }
+
+        .C {
+            flex-basis: 15%;
+            background-color: #8758FF;
+        }
+
+        .D {
+            /* flex: 2 1 50%; */
+            background-color: aqua;
+        }
+
+        .E {
+            background-color: #9FC9F3;
+        }
+        
+        .F {
+            
+            background-color: #FECD70;
+        }
+
+        .G {
+            
+            background-color: #E3C770;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="children A">A</div>
+        <div class="children B">B</div>
+        <div class="children C">C</div>
+        <!-- <div class="children D">D</div>
+        <div class="children E">E</div>
+        <div class="children F">F</div>
+        <div class="children G">G</div> -->
+    </div>
+
+
+</body>
+</html>
